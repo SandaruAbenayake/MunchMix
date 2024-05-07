@@ -1,0 +1,61 @@
+nav{
+    background-color: rgba(89, 53, 27);
+    overflow:hidden;
+    text-align: right;
+    height: 95px;
+    line-height: 80px;
+    
+}
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+nav ul li{
+    float: left;
+    display: inline; 
+    padding: 0px 45px;
+    font-size: 20px;
+    text-align: center; 
+}
+nav ul li a{
+    display: inline;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 50px 14px 50px;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: rgb(187, 81, 10);
+}
+
+ <ul>
+                <li ><img src="logo/logo.jpeg" width="100px" height="auto" ></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <button><a href="#">Login Up</a></button>
+                <button><a href="#">Sign Up</a></button>
+            </ul>
+
+
+            <nav class="navbar">
+            <div class="navdiv">
+                
+                <ul>
+                    <li ><img src="logo/logo.jpeg" width="100px" height="auto" ></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <button><a href="#">Login Up</a></button>
+                    <button><a href="#">Sign Up</a></button>
+                </ul>
+            </div>
+           
+        </nav>
