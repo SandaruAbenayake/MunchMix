@@ -1,31 +1,52 @@
+<?php
+session_start();
+$isLoggedIn = isset($_SESSION['name']);
+if ($isLoggedIn) {
+  $name = $_SESSION['name'];
+}
+?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-           MunchMix
-        </title>
-        <link rel="icon" type="image/x-icon" href="logo/logo tit.jpg">
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    </head>
-    <body background="https://png.pngtree.com/thumb_back/fw800/background/20221130/pngtree-black-plate-seen-from-above-resting-on-a-wooden-table-with-a-black-backdrop-photo-image_41464446.jpg">
-        <nav>
-                <ul>
-                    <li ><img src="logo/logo.jpeg" width="100px" height="auto" ></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                    <button><a href="#">Login</a></button>
-                    <button><a href="#">Sign Up</a></button>
-                </ul>    
-        </nav><br>
+  <head>
+    <title>MunchMix</title>
+    <link rel="icon" type="image/x-icon" href="logo/logo tit.jpg" />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body
+    background="https://png.pngtree.com/thumb_back/fw800/background/20221130/pngtree-black-plate-seen-from-above-resting-on-a-wooden-table-with-a-black-backdrop-photo-image_41464446.jpg"
+  >
+    <!-- NAV BAR -->
+    <nav>
+    <img src="logo/logo.jpeg" width="100px" height="auto" />
+    <a class="nav-lbl" href="index.php">Home</a>
+    <a class="nav-lbl" href="menu.php">Menu</a>
+    <a class="nav-lbl" href="aboutus.php">About Us</a>
+    <a class="nav-lbl" href="contactus.php">Contact Us</a>
+
+    <!-- cart  -->
+    <a href="cart.php">
+      <button style="background-color: red; border-radius: 10px;">
+        <img style="height: 40px; width: 40px" src="logo/cart.png" />
+    </a>
+    </button>
+    <div>
+      <?php if ($isLoggedIn) : ?>
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><label style="font-size: 1.2rem; font-family: Arial, Helvetica, sans-serif;"><?php echo htmlspecialchars($name); ?></label>
+          <button style="cursor: pointer;" class="btn"><a href="logout.php">Logout</a></button>
+        </div>
+      <?php else : ?>
+        <button style="cursor: pointer;" class="btn"><a href="login.html">Login</a></button>
+        <button style="cursor: pointer;" class="btn"><a href="signup.php">Signup</a></button>
+      <?php endif; ?>
+    </div>
+  </nav>
+    <br>
         <section class="menu">
             <h1>MENU</h1>
         </section><br>
         <div class="card-container">
             <div class="card">
-                <a href="pasta.html">
+                <a href="pasta.php">
                     <div class="card-content">
                         <h2><pre>PASTA</pre></h2>
                     </div>
@@ -33,7 +54,7 @@
                 </a>
             </div>
             <div class="card">
-                <a href="noodles.html">
+                <a href="noodles.php">
                     <div class="card-content">
                         <h2><pre>NOODLES</pre></h2>
                     </div>
@@ -41,7 +62,7 @@
                 </a>
             </div>
             <div class="card">
-                <a href="friedrice.html">
+                <a href="friedrice.php">
                     <div class="card-content">
                         <h2><pre>FRIED RICE</pre></h2>
                     </div>
@@ -49,11 +70,11 @@
                 </a>
             </div>
             <div class="card">
-                <a href="kottu.html">
+                <a href="kottu.php">
                     <div class="card-content">
                         <h2>KOTTU</h2>
                     </div>
-                    <img src="https://lh6.googleusercontent.com/WW_B_VGFLMdYOgNbgFYxYfonW0COc5P-D8TisEDTTPK4cvK1pM2CgLAWAb4p-ZXrP7X7gb-1yZYJ3jtviF_lNIRnzQc-GQp3yWXvQYdYp1fEtoB2ml29g47BtOhJ7RuVsIfAJ0Dc">
+                    <img src="https://hiasia.xyz/Uploads/Picture/ngocvan-195421015441-The-sound-of-Kottu-Roti.jpg">
                 <div class="card-content">
                 </a>
             </div>
@@ -98,5 +119,5 @@
           
       </footer>
 
-    </body>
+   </body>
 </html>

@@ -1,208 +1,268 @@
-body{
-    background-size: cover;
-    background-color: rgba(54, 52, 50, 0.644);
-    color: #ffffff;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 150%;
-    padding: 0% 0% 0% 0%;
+body {
+  background-size: auto;
+  background-color: rgba(54, 52, 50, 0.644);
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 150%;
+  padding: 0% 0% 0% 0%;
 }
-nav{
-    background-color: rgba(54, 52, 50, 0.822);
-    overflow:hidden;
-    text-align: right;
-    height: 95px;
-    line-height: 80px;
-    
+nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
 }
-nav ul{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    text-align: center;
-    display: inline-block;
-}
-nav ul li{
-    float: left;
-    display: inline; 
-    padding: 0px 20px 0px 20px;
-    font-size: 20px;
-    text-align: center; 
-}
-nav ul li a{
-    display: inline;
-    color: aliceblue;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 50px 14px 50px;
-    font-size: 20px;
-}
-nav ul li a:hover{
-    color: rgb(187, 81, 10);
-}
-nav ul button{
-    background-color: orange; 
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 90px;
-}
-nav ul button a {
+
+.nav-lbl{
     color: white;
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    
 }
 
+.nav-lbl:hover{
+    color: orange;
+}
+.btn {
+  background-color: orange;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 90px;
+  height: 30px;
+  font-size: medium;
+  font-weight: 600;
+}
 
-.theme{
-    text-align: center;
-   
-    
-
+.theme {
+  text-align: center;
 }
 .theme {
-    width: 100%;
-    color: aliceblue;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 20px;
+  width: 100%;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
-.title01 h2{
-    color: aliceblue;
-    text-align: center;
+.title01 h2 {
+  color: aliceblue;
+  text-align: center;
 }
-.title02{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.title02 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.quote{
-    width: 40%;
-    color: white;
-    
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    flex-direction: column;
-  
-    
-    
+.quote {
+  color: white;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.26), rgba(0, 204, 255, 0.192));
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.548);
 }
-.image{
-    margin: 10px;
+.image {
+  margin: 10px;
 }
-.image img{
-    width: 300px;
-    height: auto;
-    
+.image img {
+  width: 300px;
+  height: auto;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.footer{
-    background-color:rgba(54, 52, 50, 0.822);
-    padding: 60px 0;
+.footer {
+  background-color: rgba(54, 52, 50, 0.822);
+  padding: 60px 0;
 }
-.container{
-    max-width: 1100px;
-    margin:auto;
+.container {
+  max-width: 1100px;
+  margin: auto;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
 }
-.footer-col h4{
-    font-size: 20px;
-    font-family: Palatino Linotype;
-    color: azure;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 500;
-    
+.footer-col h4 {
+  font-size: 20px;
+  font-family: Palatino Linotype;
+  color: azure;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
-.footer-col ul{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    display: inline-block;
-    
+.footer-col ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: inline-block;
 }
-.footer ul li a{
-    text-decoration: none;
-    font-size: 16px;
-    color: #bbbbbb;
-    display: block;
-    font-family:Comic Sans MS ;
-}    
-.footer-col ul li a:hover{
-    color: #ffffff;
-    padding-left: 8px;
+.footer ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #bbbbbb;
+  display: block;
+  font-family: Comic Sans MS;
 }
-.footer-col .socialmedia a{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
 }
-.footer-col .socialmedia a:hover{
-    color: #131315;
-    background-color: #ffffff;
+.footer-col .socialmedia a {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
-.ourmenu h1{
-    text-align: center;
-    color: aliceblue;
-    font-family: Comic Sans MS;
-    font-size: 50px;
+.footer-col .socialmedia a:hover {
+  color: #131315;
+  background-color: #ffffff;
 }
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.ourmenu h1 {
+  text-align: center;
+  color: aliceblue;
+  font-family: Comic Sans MS;
+  font-size: 50px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .card {
-    margin: 50px 10px;
-    width: 400px;
-    height: auto;
-    transition: transform 0.3s;
+  margin: 50px 10px;
+  width: 400px;
+  height: auto;
+  transition: transform 0.3s;
 }
-.card-container{
-    display:flex ;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 10px;
+/* .card-container {
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  transition: 2s ease-in-out;
+  
+} */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
 }
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .card img {
-    width: 380px;
-    height: 320px;
-    
-    
+  /* position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0; */
+  cursor: pointer;
+  width: 380px;
+  height: 320px;
 }
+.add-cart-button{
+  padding: 10px 20px; 
+  margin: 10px auto;
+  font-size: 16px; 
+  cursor: pointer; 
+  border-color: aliceblue;
+  border-radius: 5px;
+  background-color: black;
+  color: aliceblue;
+
+}
+
 .card-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .card-content h2 {
-    
-    margin-bottom: 10px;
-    text-align: center;
-    color: aliceblue;
-    text-decoration: none;  
+  margin-bottom: 10px;
+  text-align: center;
+  color: aliceblue;
+  text-decoration: none;
+  grid-column: 1/-1;
 }
+.user{
+    margin: auto;
+    background-color: black;
+    width: max-content;
+    height: max-content; 
+    margin-top: 50px;
+    padding: 25px;
+}
+
+
+
+/* login page css */
+.text-filed{
+    padding-left: 5px;
+    border-radius: 5px;
+    height: 25px;
+    border: 0;
+}
+
+.text-filed:focus{
+    outline-color: #acacac;
+}
+
+
+/*-------------------login css-----------------*/
+.login-panel{
+  margin: auto;
+  margin-bottom: 50px;
+  align-items: center;
+  width: 50%;
+  background-color: #3d3d3d83;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-panel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-panel form{
+  display: block;
+  margin:auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.button{
+  height: 30px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.login-panel form input[type="text"],
+.login-panel form input[type="password"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
